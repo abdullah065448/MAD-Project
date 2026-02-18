@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_color"
+    android:padding="24dp"
+    android:id="@+id/main_template">
+
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Welcome Back"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/txtSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtWelcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Log in to manage your freelance business"
+        android:textSize="14sp"
+        android:textColor="#CCFFFFFF"/>
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/txtSub"
+        android:layout_marginTop="30dp"
+        android:hint="username@example.com"
+        android:padding="16dp"
+        android:background="@drawable/bg_input"
+        android:inputType="textEmailAddress"
+        android:textColor="@android:color/white"
+        android:textColorHint="#88FFFFFF"/>
+
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/edtEmail"
+        android:layout_marginTop="16dp"
+        android:hint="Enter your password"
+        android:padding="16dp"
+        android:background="@drawable/bg_input"
+        android:inputType="textPassword"
+        android:textColor="@android:color/white"
+        android:textColorHint="#88FFFFFF"/>
+
+
+    <TextView
+        android:id="@+id/txtForgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtPassword"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:text="Forgot Password?"
+        android:textColor="#66FFFFFF"/>
+
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/txtForgot"
+        android:layout_marginTop="25dp"
+        android:text="Login In →"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:background="@drawable/bg_button"/>
+
+
+    <TextView
+        android:id="@+id/txtOr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="or continue with"
+        android:textColor="#88FFFFFF"/>
+
+
+    <LinearLayout
+        android:id="@+id/socialLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtOr"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="Google"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:background="@drawable/bg_social"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:text="Apple"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:background="@drawable/bg_social"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/txtSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="128dp"
+        android:text="Don't have an account? Sign Up"
+        android:textColor="#99FFFFFF" />
+
+</RelativeLayout>
